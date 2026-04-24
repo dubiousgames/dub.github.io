@@ -34,9 +34,8 @@
     top: 0; left: 0; right: 0;
     z-index: 100;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 3rem;
+    justify-content: center;
+    padding: 1.5rem;
     background: rgba(5,5,8,0.9);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
@@ -58,6 +57,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 8rem 3rem 2rem;
+    text-align: center;
   }
 
   .hero-title {
@@ -66,8 +66,6 @@
     line-height: 1.1;
     text-transform: uppercase;
   }
-
-  .hero-title span { color: var(--neon-blue); }
 
   section { padding: 4rem 3rem; max-width: 1200px; margin: 0 auto; }
 
@@ -102,8 +100,6 @@
   }
   .game-card:hover { transform: translateY(-5px); }
 
-  .game-icon { width: 64px; height: 64px; object-fit: contain; image-rendering: pixelated; border-radius: 8px; }
-
   .studio-rules {
     background: var(--panel);
     border: 1px solid var(--border);
@@ -115,7 +111,6 @@
   .rule-item { margin-bottom: 1.5rem; display: flex; gap: 15px; }
   .rule-num { font-family: 'Space Mono'; color: var(--neon-blue); font-weight: bold; }
   .rule-text { font-size: 0.95rem; color: var(--dim); }
-  .rule-text strong { color: var(--white); }
 
   .team-grid {
     display: grid;
@@ -123,7 +118,6 @@
     gap: 20px;
   }
   .member { background: var(--panel); padding: 2rem; border-radius: 8px; border-top: 3px solid var(--border); }
-  .member h3 { font-family: 'Space Mono', monospace; margin-bottom: 0.5rem; }
   
   footer { text-align: center; padding: 4rem; border-top: 1px solid var(--border); color: var(--dim); font-family: 'Space Mono'; font-size: 0.7rem; }
 </style>
@@ -136,102 +130,22 @@
 
 <div class="hero">
   <p style="color:var(--dim); font-family:'Space Mono'; margin-bottom: 1rem;">EST. 2025 // HUCKNALL</p>
-  <h1 class="hero-title">WE MAKE<br><span>STUFF.</span></h1>
+  <h1 class="hero-title">BEYOND THE<span> ORDINARY.</span></h1>
 </div>
 
+<section id="kids-zone">
+  <span class="section-label" style="border-color: var(--neon-blue);">COMMUNITY_PORTAL</span>
+  <a href="https://dubiousgames.github.io/dub-kids.github.io/" style="background: rgba(0, 210, 255, 0.05); border: 2px dashed var(--neon-blue); padding: 2.5rem; border-radius: 20px; text-align: center; text-decoration: none; display: block; transition: 0.3s;">
+    <h2 style="font-family:'Space Mono'; color: var(--neon-blue);">KIDS ZONE</h2>
+    <p style="color: white; margin-top: 10px;">Safe and accessible gaming for all ages.</p>
+    <p style="font-size: 0.7rem; color: var(--neon-blue); margin-top: 15px; font-family:'Space Mono';">[ REDIRECT TO DUBIOUS KIDS ]</p>
+  </a>
+</section>
+
 <section id="killswitch-zone">
-  <span class="section-label" style="border-color: var(--neon-green);">KILLSWITCH_PROJECTS</span>
+  <span class="section-label" style="border-color: var(--neon-green);">KILLSWITCH_CANON</span>
   <div class="games-grid">
-    <a href="https://dubiousgames.github.io/dub-kids.github.io/" style="background: rgba(57, 255, 20, 0.05); border: 2px dashed var(--neon-green); padding: 2rem; border-radius: 20px; text-align: center; text-decoration: none; display: block; transition: 0.3s;">
-      <h2 style="font-family:'Space Mono'; color: var(--neon-green); font-size: 1.5rem;">KIDS ZONE</h2>
-      <p style="color: white; font-size: 0.8rem; margin-top: 5px;">Safe, fun gaming portal.</p>
-    </a>
     <div class="game-card" style="border-left: 4px solid var(--neon-green);">
       <span style="font-family: 'Space Mono'; font-size: 0.6rem; color: var(--neon-green);">IN DEVELOPMENT</span>
       <h3 style="font-family:'Space Mono'; color: var(--neon-green);">Farmhouse</h3>
-      <p style="font-size: 0.85rem; color: var(--dim);">2D Survival Horror. Part of the core Game Lore universe.</p>
-    </div>
-  </div>
-</section>
-
-<section id="runner-zone">
-  <span class="section-label" style="border-color: var(--neon-purple);">RUNNER_PROJECTS</span>
-  <div class="games-grid">
-    <a href="https://deathstudios16.itch.io/pdl" target="_blank" class="game-card" style="border-left: 4px solid var(--neon-purple);">
-      <img src="icon.png" alt="PDL Icon" class="game-icon">
-      <h3 style="font-family:'Space Mono'; color: var(--neon-purple);">Project Death: Lemon</h3>
-      <p style="font-size: 0.85rem; color: var(--dim);">A lemon enters the dark Project Death world. Separate canon from core game lore.</p>
-      <p style="font-size: 0.7rem; color: var(--neon-purple); font-family:'Space Mono';">PLAY ON ITCH.IO →</p>
-    </a>
-  </div>
-</section>
-
-<section id="noobie-zone">
-  <span class="section-label" style="border-color: var(--neon-yellow);">NOOBIE_PROJECTS</span>
-  <div class="games-grid">
-    <a href="https://dubiousgames.github.io/noob-show" class="game-card" style="border-left: 4px solid var(--neon-yellow);">
-      <h3 style="font-family:'Space Mono'; color: var(--neon-yellow);">The Noob Show</h3>
-      <p style="font-size: 0.85rem; color: var(--dim);">Official portal for TNS content and separate canon show lore.</p>
-      <p style="font-size: 0.7rem; color: var(--neon-yellow); font-family:'Space Mono';">VISIT WEBSITE →</p>
-    </a>
-  </div>
-</section>
-
-<section id="rules">
-  <span class="section-label">STUDIO_MANIFESTO</span>
-  <div class="studio-rules">
-    <div class="rule-item">
-      <span class="rule-num">01</span>
-      <div class="rule-text"><strong>Casual Gameplay:</strong> Minimum 6 hours of content.</div>
-    </div>
-    <div class="rule-item">
-      <span class="rule-num">02</span>
-      <div class="rule-text"><strong>No Paid Advantages:</strong> Microtransactions must be earnable.</div>
-    </div>
-    <div class="rule-item">
-      <span class="rule-num">03</span>
-      <div class="rule-text"><strong>Skill Over Pay:</strong> Bought items have a slight debuff.</div>
-    </div>
-    <div class="rule-item">
-      <span class="rule-num">04</span>
-      <div class="rule-text"><strong>No Real-Money Currencies:</strong> In-game money cannot be bought.</div>
-    </div>
-    <div class="rule-item">
-      <span class="rule-num">05</span>
-      <div class="rule-text"><strong>Privacy:</strong> No ID or face tracking.</div>
-    </div>
-
-    <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
-      <h4 style="font-family: 'Space Mono', monospace; color: var(--neon-blue); font-size: 0.8rem; margin-bottom: 0.5rem; text-transform: uppercase;">[ THE DUBIOUS GUARANTEE ]</h4>
-      <p style="font-size: 0.85rem; color: var(--dim); font-style: italic;">
-        If a project fails <strong>1 to 3</strong> rules, the game is <strong>discounted</strong>. 
-        If it fails <strong>4 or more</strong>, the game is <strong>free</strong>. 
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="team">
-  <span class="section-label">DEVELOPMENT_CORE</span>
-  <div class="team-grid">
-    <div class="member" style="border-top-color: var(--neon-green);">
-      <h3 style="color: var(--neon-green);">Killswitch</h3>
-      <p style="color: var(--dim); font-size: 0.7rem; font-family:'Space Mono';">PR · DEV · LEAD</p>
-    </div>
-    <div class="member" style="border-top-color: var(--neon-purple);">
-      <h3 style="color: var(--neon-purple);">RunnerTheGunner</h3>
-      <p style="color: var(--dim); font-size: 0.7rem; font-family:'Space Mono';">CO-FOUNDER · DEV</p>
-    </div>
-    <div class="member" style="border-top-color: var(--neon-yellow);">
-      <h3 style="color: var(--neon-yellow);">noobie</h3>
-      <p style="color: var(--dim); font-size: 0.7rem; font-family:'Space Mono';">CONTENT CREATOR</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>DUBIOUS GAMES // EST. 2025</p>
-</footer>
-
-</body>
-</html>
+      <p style="font-size: 0.85rem
