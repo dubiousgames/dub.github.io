@@ -1,8 +1,10 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DEEB - Independent Game Studio</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --black: #050508;
@@ -10,10 +12,10 @@
     --border: #1e1e2e;
     --white: #ffffff;
     --dim: #777799;
-    --neon-blue: #00d2ff;    /* DEEB Main */
-    --neon-purple: #9d00ff;  /* Noob Show / Canon */
-    --lemon-yellow: #f4d03f; /* Project Death Lemon */
-    --kids-green: #39ff14;   /* Kids Portal */
+    --neon-blue: #00d2ff;
+    --neon-purple: #9d00ff;
+    --lemon-yellow: #f4d03f;
+    --kids-green: #39ff14;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -25,18 +27,6 @@
     font-family: 'DM Sans', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-  }
-
-  /* Grain overlay */
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 9999;
-    opacity: 0.2;
   }
 
   nav {
@@ -59,22 +49,10 @@
     color: var(--white);
     text-decoration: none;
     letter-spacing: 0.3em;
-    text-shadow: 0 0 10px var(--neon-blue);
   }
-
-  .nav-links { display: flex; gap: 1.5rem; list-style: none; }
-  .nav-links a {
-    color: var(--dim);
-    text-decoration: none;
-    font-family: 'Space Mono', monospace;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    transition: 0.3s;
-  }
-  .nav-links a:hover { color: var(--neon-blue); }
 
   .hero {
-    min-height: 70vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +66,7 @@
     margin-bottom: 1.5rem;
   }
 
-  .hero-title span { color: var(--neon-blue); text-shadow: 0 0 20px rgba(0,210,255,0.4); }
+  .hero-title span { color: var(--neon-blue); }
 
   section { padding: 4rem 3rem; max-width: 1200px; margin: 0 auto; }
 
@@ -103,7 +81,6 @@
     padding-left: 15px;
   }
 
-  /* PORTAL */
   .portal-card {
     background: rgba(57, 255, 20, 0.02);
     border: 2px dashed var(--kids-green);
@@ -113,14 +90,6 @@
     text-decoration: none;
     display: block;
     transition: 0.3s;
-    margin-bottom: 4rem;
-  }
-  .portal-card:hover { transform: translateY(-5px); background: rgba(57, 255, 20, 0.05); }
-
-  .games-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 20px;
   }
 
   .game-card {
@@ -130,225 +99,89 @@
     border-radius: 12px;
     text-decoration: none;
     color: inherit;
-    transition: 0.3s;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  .game-card:hover { border-color: var(--neon-blue); transform: translateY(-5px); }
 
-  .game-icon {
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
-    image-rendering: pixelated;
-    border-radius: 8px;
-  }
+  .game-icon { width: 64px; height: 64px; object-fit: contain; image-rendering: pixelated; border-radius: 8px; }
 
-  .status-badge {
-    font-family: 'Space Mono', monospace;
-    font-size: 0.6rem;
-    padding: 3px 8px;
-    border-radius: 4px;
-    background: rgba(255,255,255,0.05);
-    display: inline-block;
-    align-self: flex-start;
-  }
-
-  /* TEAM */
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-  .member { background: var(--panel); padding: 2rem; border-radius: 8px; border-top: 3px solid var(--neon-blue); }
-
-  .social-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.2rem;
+  /* Rules Section */
+  .studio-rules {
     background: var(--panel);
-    text-decoration: none;
-    color: var(--white);
-    border-radius: 8px;
-    margin-bottom: 8px;
-    transition: 0.2s;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-top: 4rem;
   }
-  .social-row:hover { background: var(--border); color: var(--neon-blue); }
 
-  footer { text-align: center; padding: 4rem; border-top: 1px solid var(--border); color: var(--dim); font-family: 'Space Mono', monospace; font-size: 0.7rem; }
+  .rule-item { margin-bottom: 1.5rem; display: flex; gap: 15px; }
+  .rule-num { font-family: 'Space Mono'; color: var(--neon-blue); font-weight: bold; }
+  .rule-text { font-size: 0.9rem; color: var(--dim); }
+  .rule-text strong { color: var(--white); }
+
+  footer { text-align: center; padding: 4rem; border-top: 1px solid var(--border); color: var(--dim); font-family: 'Space Mono'; font-size: 0.7rem; }
 </style>
 </head>
 <body>
 
 <nav>
   <a href="#" class="nav-logo">DEEB</a>
-  <div class="nav-links">
-    <a href="#kids">Kids</a>
-    <a href="#noob">Lore</a>
-    <a href="#death">Project Death</a>
-    <a href="#team">Team</a>
-  </div>
 </nav>
 
 <div class="hero">
-  <p style="color:var(--dim); font-family:'Space Mono'; margin-bottom: 1rem;">INDEPENDENT GAME STUDIO // EST. 2025</p>
-  <h1 class="hero-title">We make<br><span>stuff.</span></h1>
-  <p style="max-width: 500px; color: var(--dim);">Handcrafted worlds. Small team. Zero microtransactions.</p>
+  <h1 class="hero-title">WE MAKE<br><span>STUFF.</span></h1>
+  <p style="color:var(--dim); font-family:'Space Mono';">INDEPENDENT STUDIO // ENGLAND</p>
 </div>
 
 <section id="kids">
-  <span class="section-label">ZONE_01: FAMILY FRIENDLY</span>
+  <span class="section-label">ZONE_01: KIDS</span>
   <a href="https://deebstu.github.io/DEEBstu-kids.github.io/" class="portal-card">
-    <img src="button clicker icon.png" alt="RuneTap" class="game-icon" style="margin: 0 auto 1rem;">
-    <h2 style="font-family:'Space Mono'; color: var(--kids-green);">RuneTap Portal</h2>
-    <p style="margin-top: 10px;">Access the safe zone for RuneTap and sibling-friendly fun.</p>
-    <p style="font-size: 0.7rem; margin-top: 15px; color: var(--kids-green); font-family:'Space Mono';">[ VISIT DEEBSTU-KIDS.GITHUB.IO ]</p>
+    <h2 style="font-family:'Space Mono'; color: var(--kids-green);">KIDS PORTAL</h2>
+    <p style="color: white; margin-top: 10px;">Safe games for the younger ones.</p>
   </a>
 </section>
 
-<section id="noob" style="background: rgba(157,0,255,0.02);">
-  <span class="section-label" style="border-color: var(--neon-purple);">ZONE_02: THE NOOB SHOW &amp; CANON</span>
-  <div class="games-grid">
-    <div class="game-card" style="border-color: var(--neon-purple);">
-      <span class="status-badge" style="color: var(--neon-purple);">IN DEV</span>
-      <h3 style="font-family:'Space Mono';">Farmhouse</h3>
-      <p style="font-size: 0.85rem; color: var(--dim);">A 2D survival horror experience. Five nights of mystery and shadows.</p>
-    </div>
-    <div class="game-card">
-      <span class="status-badge">PLANNED</span>
-      <h3 style="font-family:'Space Mono';">Discovery</h3>
-      <p style="font-size: 0.85rem; color: var(--dim);">The expansion of the Noob Show universe.</p>
-    </div>
-  </div>
-</section>
-
 <section id="death">
-  <span class="section-label" style="border-color: var(--lemon-yellow);">ZONE_03: PROJECT DEATH UNIVERSE</span>
-  <div class="games-grid">
+  <span class="section-label">ZONE_02: PROJECT DEATH</span>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
     <a href="https://deathstudios16.itch.io/pdl" target="_blank" class="game-card" style="border-left: 4px solid var(--lemon-yellow);">
-      <img src="icon.png" alt="PDL" class="game-icon">
-      <span class="status-badge" style="background: var(--lemon-yellow); color: black;">RELEASED</span>
+      <img src="icon.png" alt="PDL Icon" class="game-icon">
       <h3 style="font-family:'Space Mono'; color: var(--lemon-yellow);">Project Death: Lemon</h3>
-      <p style="font-size: 0.85rem; color: var(--dim);">When a lemon discovers a portal to the Project Death world, everything takes a dark turn. Embark on an adventure where you can even kill yourself—the stakes are absolute.</p>
-      <p style="font-size: 0.7rem; color: var(--lemon-yellow); font-family:'Space Mono';">PLAY ON ITCH.IO →</p>
+      <p style="font-size: 0.85rem; color: var(--dim);">A dark adventure where a lemon enters the Project Death world. High stakes, including the ability to kill yourself.</p>
     </a>
   </div>
 </section>
 
-<section id="team">
-  <span class="section-label">TEAM_ACCESS</span>
-  <div class="team-grid">
-    <div class="member">
-      <h3>obdev</h3>
-      <p style="color: var(--neon-blue); font-size: 0.7rem; font-family:'Space Mono';">CO-FOUNDER · PR · DEV</p>
-    </div>
-    <div class="member">
-      <h3>RunnerTheGunner</h3>
-      <p style="color: var(--neon-blue); font-size: 0.7rem; font-family:'Space Mono';">CO-FOUNDER · DEV</p>
-    </div>
-    <div class="member">
-      <h3>noobie</h3>
-      <p style="color: var(--neon-blue); font-size: 0.7rem; font-family:'Space Mono';">CONTENT CREATOR</p>
-    </div>
-  </div>
-</section>
-
-<section id="socials">
-  <span class="section-label">OUTSIDE_LINKS</span>
-  <a href="https://youtube.com/@DEEB-STU" target="_blank" class="social-row"><span>YouTube: @DEEB-STU</span><span>→</span></a>
-  <a href="https://discord.gg/sUXyq7ErSc" target="_blank" class="social-row"><span>Discord Server</span><span>→</span></a>
-</section>
-<style>
-  /* Rule Section Styling */
-  .studio-manifesto {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 3rem;
-    margin: 4rem auto;
-    max-width: 900px;
-    text-align: left;
-  }
-
-  .manifesto-header {
-    font-family: 'Space Mono', monospace;
-    color: var(--neon-blue);
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .rule-list {
-    list-style: none;
-    display: grid;
-    gap: 1.5rem;
-  }
-
-  .rule-item {
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-  }
-
-  .rule-number {
-    font-family: 'Space Mono', monospace;
-    color: var(--neon-blue);
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin-top: 3px;
-  }
-
-  .rule-text {
-    font-size: 0.95rem;
-    color: var(--dim);
-    line-height: 1.5;
-  }
-
-  .rule-text strong {
-    color: var(--white);
-  }
-</style>
-
-<section class="studio-manifesto">
-  <div class="manifesto-header">
-    <span>[</span> DEEB STUDIO RULES <span>]</span>
-  </div>
-  
-  <div class="rule-list">
+<section id="rules">
+  <span class="section-label">STUDIO_MANIFESTO</span>
+  <div class="studio-rules">
     <div class="rule-item">
-      <span class="rule-number">01</span>
-      <div class="rule-text"><strong>Casual Gameplay:</strong> Every game must provide at least 6 hours of casual gameplay.</div>
+      <span class="rule-num">01</span>
+      <div class="rule-text"><strong>Casual Gameplay:</strong> At least 6 hours of gameplay per game.</div>
     </div>
-    
     <div class="rule-item">
-      <span class="rule-number">02</span>
-      <div class="rule-text"><strong>No Paid Advantages:</strong> Microtransactions, if present, must be earnable through regular gameplay.</div>
+      <span class="rule-num">02</span>
+      <div class="rule-text"><strong>No Paid Advantages:</strong> Microtransactions must be earnable in-game.</div>
     </div>
-    
     <div class="rule-item">
-      <span class="rule-number">03</span>
-      <div class="rule-text"><strong>Earn Your Gear:</strong> Purchased items will never be "the best" and will have a slight debuff compared to items earned by grinding.</div>
+      <span class="rule-num">03</span>
+      <div class="rule-text"><strong>Earned > Bought:</strong> Bought items receive a slight debuff compared to grinded items.</div>
     </div>
-    
     <div class="rule-item">
-      <span class="rule-number">04</span>
-      <div class="rule-text"><strong>Real Money Ban:</strong> In-game currencies absolutely cannot be bought with real money.</div>
+      <span class="rule-num">04</span>
+      <div class="rule-text"><strong>No Real Money Currency:</strong> Currencies cannot be bought with real cash.</div>
     </div>
-    
     <div class="rule-item">
-      <span class="rule-number">05</span>
-      <div class="rule-text"><strong>Privacy First:</strong> No ID or face verification. We only use phone numbers for security when necessary.</div>
+      <span class="rule-num">05</span>
+      <div class="rule-text"><strong>Privacy:</strong> No ID/Face verification. Phone number only if needed.</div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>DEEB // HANDCRAFTED IN ENGLAND // EST. 2025</p>
+  <p>DEEB STUDIO // EST. 2025</p>
 </footer>
 
-
-
-</body></html>
+</body>
+</html>
