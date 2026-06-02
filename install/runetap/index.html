@@ -1,0 +1,196 @@
+<html lang=""><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Silex v3.6.4">
+<link rel="stylesheet" href="/css/index-9cb7435c5220c046abad933ff04cee2519f6b1726ca3c56d31ea711075e34d19.css">
+
+
+
+
+
+</head>
+<body id="i67l">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runetap | Official Installer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #050508;
+            --panel: #0d0d12;
+            --border: #1e1e2e;
+            --white: #ffffff;
+            --dim: #777799;
+            --runetap-green: #39ff14; /* Matched to your Farmhouse green */
+            --warning-amber: #f4d03f;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--black);
+            color: var(--white);
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            padding: 1.5rem;
+            background: rgba(5,5,8,0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-logo {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--runetap-green);
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+        }
+
+        .hero {
+            min-height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 8rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-family: 'Space Mono', monospace;
+            font-size: clamp(2.5rem, 10vw, 5rem);
+            text-transform: uppercase;
+        }
+
+        section { padding: 2rem 2rem; max-width: 900px; margin: 0 auto; }
+
+        .section-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            color: var(--dim);
+            margin-bottom: 2rem;
+            display: block;
+            border-left: 3px solid var(--runetap-green);
+            padding-left: 15px;
+        }
+
+        .content-panel {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            padding: 2.5rem;
+            border-radius: 16px;
+        }
+
+        /* Button Container */
+        .download-flex {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn-main {
+            background: var(--runetap-green);
+            color: black;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Space Mono', monospace;
+            transition: 0.3s;
+        }
+
+        .btn-sub {
+            background: transparent;
+            border: 1px solid var(--runetap-green);
+            color: var(--runetap-green);
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Space Mono', monospace;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover, .btn-sub:hover { transform: scale(1.05); filter: brightness(1.2); }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--dim);
+            text-decoration: none;
+            font-family: 'Space Mono';
+            font-size: 0.8rem;
+        }
+
+        footer { text-align: center; padding: 4rem; opacity: 0.4; font-family: 'Space Mono'; font-size: 0.7rem; }
+    </style>
+
+
+
+<nav><a href="#" class="nav-logo">RUNETAP</a></nav>
+
+<div class="hero">
+    <p style="color:var(--runetap-green); font-family:'Space Mono'; margin-bottom: 10px; letter-spacing: 5px;">DEVELOPED BY KILLSWITCH</p>
+    <h1 class="hero-title">RUNE<span style="color:var(--runetap-green);">TAP</span></h1>
+</div>
+
+<section id="download">
+    <span class="section-label">FILE_01: DISTRIBUTION</span>
+    <div class="content-panel">
+        <h2 style="font-family:'Space Mono'; margin-bottom: 1rem;">Select Platform.</h2>
+        <p style="color: var(--dim); margin-bottom: 1.5rem;">
+            Runetap is available for both Desktop and Mobile. Choose your version below to start the installation.
+        </p>
+        
+        <div class="download-flex">
+            <a href="https://github.com/dubiousgames/games/releases/download/update/RUNETAP.v1.8.6.zip" class="btn-main">
+                PC VERSION (.ZIP)
+            </a>
+
+            <a href="https://github.com/dubiousgames/games/releases/download/update2/runetap.1.8.6.apk" class="btn-sub">
+                ANDROID (.APK)
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="safety">
+    <span class="section-label" style="border-color: var(--warning-amber);">LOG_02: INSTALLATION_HELP</span>
+    <div class="content-panel" style="border-color: var(--warning-amber);">
+        <h3 style="font-family:'Space Mono'; color: var(--warning-amber); margin-bottom: 1rem;">PC USER GUIDE</h3>
+        <p style="font-size: 0.85rem; color: var(--dim); margin-bottom: 1rem;">
+            If Windows SmartScreen flags the file: Click <strong>"More Info"</strong> and then <strong>"Run Anyway"</strong>. 
+            This happens because the executable is independently signed.
+        </p>
+        <h3 style="font-family:'Space Mono'; color: var(--warning-amber); margin-bottom: 1rem;">ANDROID USER GUIDE</h3>
+        <p style="font-size: 0.85rem; color: var(--dim);">
+            You may need to enable <strong>"Install from Unknown Sources"</strong> in your phone settings to run the APK.
+        </p>
+    </div>
+</section>
+
+<a href="https://dubiousgames.github.io/dub.github.io/" class="back-link">← RETURN TO DUBIOUS HUB</a>
+
+<footer>
+    <p>© 2025 DUBIOUS GAMES. ALL RIGHTS RESERVED.</p>
+</footer>
+
+
+
+</body></html>
