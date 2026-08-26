@@ -158,11 +158,11 @@
         </p>
 
         <div class="download-flex">
-            <a href="https://github.com/dubiousgames/games/releases/download/update/RUNETAP.v1.8.6.zip" class="btn-main">
+            <a href="https://release-assets.githubusercontent.com/github-production-release-asset/1180014951/ab17d8f4-c501-4349-b68b-824d26e61f22?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-26T17%3A18%3A23Z&rscd=attachment%3B+filename%3DProject.Death.Lemon.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-26T16%3A18%3A19Z&ske=2026-08-26T17%3A18%3A23Z&sks=b&skv=2018-11-09&sig=5%2BkwxknNHwbwBZuEbr5z06GYlwZmxd6dFM5%2Bl9ogelY%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4Nzc2NDcwMCwibmJmIjoxNzg3NzYxMTAwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.kkmoGhqDNt8Up_hfrWhC53mJqgwacunhf1uPDlpYYes&response-content-disposition=attachment%3B%20filename%3DProject.Death.Lemon.zip&response-content-type=application%2Foctet-stream" class="btn-main">
                 PC VERSION (.ZIP)
             </a>
 
-            <a href="https://github.com/dubiousgames/games/releases/download/update2/runetap.1.8.6.apk" class="btn-sub">
+            <a href="https://release-assets.githubusercontent.com/github-production-release-asset/1180014951/41637f05-50ef-4904-9458-2b7c445810e5?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-26T17%3A17%3A51Z&rscd=attachment%3B+filename%3DProjectDeathLemon_v1.0.0_Joystick.apk&rsct=application%2Fvnd.android.package-archive&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-26T16%3A17%3A32Z&ske=2026-08-26T17%3A17%3A51Z&sks=b&skv=2018-11-09&sig=iOdn9A3MPfyGapMI16mkuqCtz8LgGUqBIGBuQ%2Bro9hE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4Nzc2NDY1MiwibmJmIjoxNzg3NzYxMDUyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.1rkz1OF9N1uQa4llFFZyvjajhFS5E109AzQQNfSMxLE&response-content-disposition=attachment%3B%20filename%3DProjectDeathLemon_v1.0.0_Joystick.apk&response-content-type=application%2Fvnd.android.package-archive" class="btn-sub">
                 ANDROID (.APK)
             </a>
         </div>
